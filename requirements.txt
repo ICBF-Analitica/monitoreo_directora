@@ -1,0 +1,7 @@
+pandas
+requests==2.28.1
+bs4
+datetime
+openpyxl
+nltk
+geopandas
