@@ -66,6 +66,10 @@ url_icbf = "https://news.google.com/search?q=icbf&hl=es-419&gl=US&ceid=US%3Aes-4
 noticias_astrid = google_noticias(url_astrid_caceres)
 noticias_icbf = google_noticias(url_icbf)
 
+# Agregar columna de categorización
+noticias_astrid['categorizacion'] = 'Astrid Cáceres'
+noticias_icbf['categorizacion'] = 'ICBF'
+
 # Unir los resultados en un solo DataFrame
 noticias_colombia = pd.concat([noticias_astrid, noticias_icbf], ignore_index=True)
 #Creando variable Ciudad
