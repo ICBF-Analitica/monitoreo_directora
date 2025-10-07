@@ -324,6 +324,7 @@ for i, row in noticias_colombia.iterrows():
                 'DiaSemana': row['DiaSemana'],
                 'DiaNumero': row['DiaNumero'],
                 'tokens': palabra
+                'categorizacion': row['categorizacion']
             }
             data.append(nueva_fila)
 
